@@ -13,7 +13,7 @@ img {
 }
 /**** Variables ****/
 :root {
-  --heade-height: 4.5rem;
+  --header-height: 4.5rem;
   /* colors */
   --hue: 159;
   /*HSL color mode */
@@ -83,13 +83,10 @@ h1 {
   background-color: var(--body-color);
   width: 100%;
 }
-nav {
-  height: var(--header-height);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+main {
+  margin-top: calc(var(--header-height) + 2rem);
 }
+/**** Logo ****/
 .logo {
   font: 700 1.31rem 'Poppins', sans-serif;
   color: var(--title-color);
@@ -97,8 +94,13 @@ nav {
 .logo span {
   color: var(--base-color);
 }
-main {
-  margin-top: var(--heade-height);
+/**** Navigation ****/
+nav {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 /**** Home  ****/
 #home {
