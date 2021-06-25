@@ -9,7 +9,10 @@
     <meta name="keywords" content="html5, tecnologia" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!--Icons-->
+      
+     <!--Swiper-->
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+     <!--Icons-->
       <link rel="stylesheet" href="assets/fonts/style.css" />
     <!--Style-->
     <link rel="stylesheet" href="style.css" />
@@ -20,7 +23,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+<body>
     <header id="header" class="scroll">
         <nav class="container">
           <a class="logo" href="#">beauty<span>salon</span>.</a>
@@ -39,8 +42,8 @@
           <div class="toggle icon-close"></div>
       </nav>
     </header>
-
     <main>
+      <!--Home-->
       <section class="section" id="home">
         <div class="container grid">
           <div class="image">
@@ -60,6 +63,7 @@
         </div>
       </section>
       <div class="divider-1"></div>
+      <!--About-->
       <section class="section" id="about">
         <div class="container grid">
           <div class="image">
@@ -76,6 +80,7 @@
         </div>
       </section>
       <div class="divider-2"></div>
+      <!--Services-->
       <section class="section" id="services">
         <div class="container grid">
           <header>
@@ -102,7 +107,60 @@
           </div>
         </div>
       </section>
+      <div class="divider-1"></div>
+      <!--Testimonials-->
+      <section class="section" id="testimonials">
+        <div class="container">
+          <header>
+            <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+          </header>
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quidem, dicta voluptates, sunt obcaecati iure maiores fuga libero laborum pariatur expedita ab. In pariatur ad ipsam, quo quas dolor adipisci!
+                  </p>
+                  <cite>
+                    <img src="https://randomuser.me/api/portraits/women/47.jpg" alt="Foto de Wanessa Souza">
+                    Wanessa Souza
+                  </cite>
+                </blockquote>
+              </div>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quidem, dicta voluptates, sunt obcaecati iure maiores fuga libero laborum pariatur expedita ab. In pariatur ad ipsam, quo quas dolor adipisci!
+                  </p>
+                  <cite>
+                    <img src="https://randomuser.me/api/portraits/women/82.jpg" alt="Foto de Isadora Maria">
+                    Isadora Maria
+                  </cite>
+                </blockquote>
+              </div>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quidem, dicta voluptates, sunt obcaecati iure maiores fuga libero laborum pariatur expedita ab. In pariatur ad ipsam, quo quas dolor adipisci!
+                  </p>
+                  <cite>
+                    <img src="https://randomuser.me/api/portraits/women/74.jpg" alt="Foto de Patricia Roberta">
+                    Patricia Roberta
+                  </cite>
+                </blockquote>
+              </div>
+            </div> 
+            <!--If we need pagination-->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
     </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--Main.JS-->
     <script src="main.js"></script>
   </body>
 </html>
